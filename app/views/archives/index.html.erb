@@ -101,7 +101,27 @@
             </a>
         </div>
     </div>
+    <button onclick="playAud()" type="button">Onorico Flow Player</button>
 
+    <audio id = "audio">
+        <source src='/my audio.mp3' type="audio/mpeg">
+    </audio>
+
+    <audio controls="controls">  
+       <source src='/my audio.mp3' />  
+    </audio> 
+
+    <script> 
+    var audio = document.getElementById("audio"); 
+       function playAud() { 
+        if (audio.paused){
+            audio.play(); 
+        }
+        else{
+            audio.pause();
+        }
+        } 
+    </script>
     <hr>
 
     <!-- Footer -->
