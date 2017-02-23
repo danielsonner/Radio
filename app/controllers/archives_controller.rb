@@ -1,4 +1,4 @@
 class ArchivesController < ApplicationController
-  def index
+  def new
   end
 end
