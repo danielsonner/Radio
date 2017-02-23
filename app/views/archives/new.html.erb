@@ -1,2 +1,11 @@
-<h1>Archives#new</h1>
-<p>Find me in app/views/archives/new.html.erb</p>
+<h1>New Archive</h1>
+
+<%= form_for @archive do |f| %>
+	<%= f.label :url %>
+	<%= f.text_area :url %>
+	<br>
+	<%= f.label :title %>
+	<%= f.text_area :title %>
+	<br>
+	<%= f.submit %>
+<% end %>

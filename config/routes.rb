@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'archives/index'
+
   get 'archives/new'
 
   root 'archives#index'
